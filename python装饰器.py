@@ -64,7 +64,7 @@ def f(x):
     return x * 2
 
 ## method 1 ##
-@decorator_a
+@decorator_a # 就相当于执行了 f = decorator_a(f)
 def f(x):
     print('Get in f')
     return x * 2
